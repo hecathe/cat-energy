@@ -1,0 +1,22 @@
+extends ../template
+
+block variables
+    - var title = 'Главная'
+
+block content
+    main.content
+        section.presentation
+            .presentation__container.container
+                .presentation__text-wrap
+                    h1.presentation__title.title Функциональное питание для котов
+                    p.presentation__slogan Занялся собой? Займись котом!
+
+                    picture.presentation__img-wrap
+                        source(media="(min-width: 1025px)" srcset="assets/images/index-can-desktop@1x.png 1x, assets/images/index-can-desktop@2x.png 2x")
+                        source(media="(min-width: 768px)" srcset="assets/images/index-can-tablet@1x.png 1x, assets/images/index-can-tablet@2x.png 2x")
+                        img(srcset="assets/images/index-can-mobile@1x.png, assets/images/index-can-mobile@2x.png 2x" alt="Функциональное питание для котов")
+
+                    a.presentation__link.btn(href="#") подобрать программу
+                .presentation__back
+                    picture
+                        source

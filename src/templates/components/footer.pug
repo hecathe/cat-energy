@@ -1,0 +1,35 @@
+footer.footer
+    .footer__contacts
+        p.footer__text приглашаем к сотрудничеству дилеров!
+        address.footer__address ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+
+    .footer__map
+        pisture
+            source(srcset="assets/images/map-desktop-min.png" media="(min-width: 1024px")
+            source(srcset="assets/images/map-tablet-min.png" media="(min-width: 768px")
+            img.footer__map-img(src="assets/images/map-min.png" alt="Карта")
+
+    .footer__container.container
+        a.footer__logo(href="#")
+            img.footer__img(src="assets/images/logo-footer.svg", width="128" height="24" alt="Logo")
+
+        ul.footer__list.social-list
+            li.social-list__item
+                a.social-list__link(href="#")
+                    svg.social-list__icon(width="23" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon_vkontakte")
+            li.social-list__item
+                a.social-list__link(href="#")
+                    svg.social-list__icon(width="16" height="16")
+                        use(xlink:href="assets/images/sprite.svg#icon_instagram")
+            li.social-list__item
+                a.social-list__link(href="#")
+                    svg.social-list__icon(width="22" height="22")
+                        use(xlink:href="assets/images/sprite.svg#icon_facebook")
+        a.footer__copyright(href="#") 
+            span.footer__copyright-text HTML Academy
+            svg.social-list__icon(width="27" height="34")
+                use(xlink:href="assets/images/sprite.svg#logo_html")
+
+
+

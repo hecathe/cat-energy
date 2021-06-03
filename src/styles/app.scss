@@ -1,0 +1,131 @@
+:root {
+	--content-p-r: 0;
+}
+
+// Размеры
+$content-max-weight: 1240px;
+
+//Цвета
+$color-black: #000000;
+$color-black-1: #111111;
+$color-special_dark-grey-2: #222222;
+$color-special_dark-grey: #444444;
+$color-special_grey-2: #666666;
+$color-lightgrey: #e6e6e6;
+$color-border-grey: #e7e7e7;
+$color-back_grey: #eaeaea;
+$color-special_grey-3: #ebebeb;
+$color-basic_grey: #f2f2f2;
+$color-grey_2: #d9d9d9;
+$color-special_grey: #cdcdcd;
+$color-white: #ffffff;
+$color-basic_green: #68b738;
+$color-basic_green-2: #5eaa2f;
+
+@import "./common/fonts.scss";
+@import "./common/normalize";
+
+* {
+	box-sizing: border-box;
+	outline-offset: 4px;
+}
+
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color-special_dark-grey;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1;
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.title {
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 40px;
+	padding: 0;
+	margin: 0;
+	color: $color-black;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: $color-white;
+	background-color: $color-basic_green;
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+	&:hover {
+		background-color: $color-basic_green-2;
+	}
+
+	&:active {
+		background-color: $color-basic_green-2;
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+// https://github.com/WICG/focus-visible
+.js-focus-visible :focus:not(.focus-visible) {
+	outline: none;
+}
+
+@import "./common/header.scss";
+@import "./pages/index.scss";
+@import "./common/footer.scss";
+
+// @media screen and (max-width: 1274px) {
+
+// }
+
+// @media screen and (max-width: 960px) {
+
+// }
+
+// @media screen and (max-width: 768px) {
+
+// }
